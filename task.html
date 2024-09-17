@@ -1,0 +1,85 @@
+<!<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width"=device-width, initial-scale="1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="task.css">
+        <script src="script.js"></script>
+        <title>Task list</title>
+        
+    </head>
+    <body>
+        <!--menu-->
+        <div class="navbar" id="myNavbar">
+            <a href="index.html">Home</a>
+            <a href="">Media</a>
+            <a href="task.html">Task to do</a>
+            <a href="about.html">About</a>
+        </div>
+        <br><br>
+
+        <!--section-->
+    <main>
+        <section>
+            <form>
+                <div>
+                    <label>Task</label>
+                    <input type="text" id="inputName" required="required" name="task" class="large"
+                    placeholder="Build a shopping cart" />
+                </div>
+                <div>
+                    <label>Required by</label>
+                    <input type="date" id="inputDate" required="required" name="requiredBy" />
+                </div>
+                <div>
+                    <label>Category</label>
+                    <select name="category" id="selectCategory">
+                        <option value="Personal">Personal</option>
+                        <option value="Work">Work</option>
+                    </select>
+                </div>
+                <nav>
+                    <button onclick="addRow()">Add</button>
+                </nav>
+            </form>
+        </section>
+
+        <!--table section-->
+        <section>
+            <table id="tblTasks">
+                <colgroup>
+                    <col width="50%">
+                    <col width="25%">
+                    <col width="25%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Due</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Return library books</td>
+                        <td><time datetime="2013-10-14>2013-10-14</time></td>
+                        <td>Personal</td>
+                    </tr>
+                    <tr>
+                        <td>Complete Django web app</td>
+                        <td><time datetime="2013-10-14">2013-10-14</time></td>
+                        <td>Personal</td>
+                        </tr>
+                </tbody>
+            </table>
+            </form>
+        </section>
+   
+    </main>
+
+    <footer></footer>
+    
+        
+    </body>
+</html>
